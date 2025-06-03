@@ -1,8 +1,8 @@
 package com.example.game;
 
 import de.aschallenberg.gamelibrary.game.Game;
-import de.aschallenberg.middleware.dto.BotData;
-import de.aschallenberg.middleware.messages.Payload;
+import de.aschallenberg.communication.dto.BotData;
+import de.aschallenberg.communication.messages.Payload;
 
 import java.util.List;
 
@@ -19,12 +19,12 @@ import java.util.List;
  *     {@link Game#getGameData()}
  *     gibt dir alle wichtigen Informationen über das Spiel zurück.
  *     Hiervon bekommst du eine Liste aller teilnehmenden Bots über
- *     {@link de.aschallenberg.middleware.dto.GameData#getBots()}
+ *     {@link de.aschallenberg.communication.dto.GameData#getBots()}
  *     mit dem Namen des Bots und dem Nutzernamen des Besitzers.
  *     Zudem erhältst du über
- *     {@link de.aschallenberg.middleware.dto.GameData#getModule()},
- *     {@link de.aschallenberg.middleware.dto.GameData#getVersion()} und
- *     {@link de.aschallenberg.middleware.dto.GameData#getSettings()}
+ *     {@link de.aschallenberg.communication.dto.GameData#getModule()},
+ *     {@link de.aschallenberg.communication.dto.GameData#getVersion()} und
+ *     {@link de.aschallenberg.communication.dto.GameData#getSettings()}
  *     den Modulnamen des Moduls und die Version, welches bzw. in welcher gespielt wird (relevant, falls deine
  *     Implementierung verschiedene Module und/oder Versionen unterstützt) und die Spieleinstellungen.
  * </p>
